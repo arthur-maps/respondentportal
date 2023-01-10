@@ -38,11 +38,9 @@ index.html#-->
         
         
 
-    CDL= L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities', {
-    layers: 'cdl_2019'
-}).addTo(map);   
+ 
         
- /*       var basemaps = {
+       var basemaps = {
     Background: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -51,7 +49,7 @@ index.html#-->
     service: 'WMS',
     version: '1.1.1',
     request: 'GetMap',
-    layers: 'cdl_2019',
+    layers: 'cdl_2015',
     transparent: 'true',
     srs: 'epsg:5070',
     bbox: '-2354935.721,311822.402,2256319.225,3165592.366',
@@ -67,7 +65,7 @@ L.control.layers(basemaps).addTo(map);
 
 basemaps.CDL19.addTo(map);
         
- */     
+     
         
 
     </script>
