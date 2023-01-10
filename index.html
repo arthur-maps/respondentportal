@@ -45,17 +45,14 @@ index.html#-->
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }),
-    CDL20: L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?', {
-    service: 'WMS',
-    version: '1.1.1',
-    request: 'GetMap',
+    CDL20: L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap', {
     layers: 'cdl_2020',
+    EPSG:4326
     bbox: '-2354935.721,311822.402,2256319.225,3165592.366',
     width: '1200',
     height: '800',
     format: 'image/png',
     attribution: 'test',
-    maxZoom: 19,
     }),
     Soilmoisture: L.tileLayer.wms('https://cloud.csiss.gmu.edu/smap_server/cgi-bin/mapserv?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&MAP=/WMS/SMAP-HYB-1KM-WEEKLY_2021.map&LAYERS=SMAP-HYB-1KM-WEEKLY_2021_01_2021.01.04_2021.01.10_PM&CRS=EPSG%3A5070&FORMAT=image%2Fpng&TRANSPARENT=true&BBOX=-2354935.721,311822.402,2256319.225,3165592.366&WIDTH=1200&HEIGHT=800')
          
