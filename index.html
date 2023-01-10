@@ -36,10 +36,6 @@ index.html#-->
 
         var map = L.map('map').setView([39.5, -98.35], 6);
         
-
-  var wmsLayer = L.tileLayer.wms('https://cloud.csiss.gmu.edu/smap_server/cgi-bin/mapserv?', {
-    layers: 'SMAP-HYB-1KM-3DAYS_2021.01.02_2021.01.04_PM'
-}).addTo(map);
         
 
         
@@ -47,6 +43,23 @@ index.html#-->
 //    maxZoom: 19,
 //    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 //}).addTo(map);
+        
+        
+        var basemaps = {
+    Background: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }),
+
+   Soilmoisture: L.tileLayer.wms('https://cloud.csiss.gmu.edu/smap_server/cgi-bin/mapserv?', {
+    layers: 'SMAP-HYB-1KM-3DAYS_2021.01.02_2021.01.04_PM'
+})
+
+};
+
+L.control.layers(basemaps).addTo(map);
+
+basemaps.Soilmoisture.addTo(map);
         
     </script>
 
