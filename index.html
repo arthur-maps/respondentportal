@@ -51,7 +51,16 @@ index.html#-->
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }),
     CDL: L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi', {
-    layers: 'cdl_2015'
+    SERVICE: 'WMS',
+    VERSION: '1.1.1',
+    REQUEST: 'GetMap',
+    LAYERS: 'cdl_2020',
+    TRANSPARENT: 'true',
+    SRS: 'EPSG:5070',
+    BBOX: '-2354935.721,311822.402,2256319.225,3165592.366',
+    FORMAT: 'image/png',
+    WIDTH: '600',
+    HEIGHT: '400'
     })
 };
 
