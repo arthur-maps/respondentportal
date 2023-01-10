@@ -42,7 +42,7 @@ index.html#-->
     layers: 'cdl_2019'
 }).addTo(map);   
         
-        var basemaps = {
+ /*       var basemaps = {
     Background: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -66,7 +66,9 @@ L.control.layers(basemaps).addTo(map);
 
 basemaps.CDL19.addTo(map);
         
+ */     
         
+L.control.layers(CDL).addTo(map);
     </script>
 
 </body>
