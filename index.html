@@ -37,16 +37,16 @@ index.html#-->
         var map = L.map('map').setView([39.5, -98.35], 6);
         
 
-        
-var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2020&TRANSPARENT=true&SRS=EPSG:5070&BBOX=-2354935.721,311822.402,2256319.225,3165592.366&FORMAT=image/png&WIDTH=600&HEIGHT=400',{
- // format: 'image/png',
-//   transparent: true,
+  var wmsLayer = L.tileLayer.wms('https://cloud.csiss.gmu.edu/smap_server/cgi-bin/mapserv?', {
+    layers: 'SMAP-HYB-1KM-3DAYS_2021.01.02_2021.01.04_PM'
 }).addTo(map);
         
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+
+        
+//        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//    maxZoom: 19,
+//    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+//}).addTo(map);
         
     </script>
 
