@@ -50,11 +50,11 @@ index.html#-->
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }),
-    CDL: L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi', {
+    CDL19: L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?', {
     SERVICE: 'WMS',
     VERSION: '1.1.1',
     REQUEST: 'GetMap',
-    LAYERS: 'cdl_2020',
+    LAYERS: 'cdl_2019',
     TRANSPARENT: 'true',
     SRS: 'EPSG:5070',
     BBOX: '-2354935.721,311822.402,2256319.225,3165592.366',
@@ -66,7 +66,7 @@ index.html#-->
 
 L.control.layers(basemaps).addTo(map);
 
-basemaps.Background.addTo(map);
+basemaps.CDL19.addTo(map);
         
         
     </script>
