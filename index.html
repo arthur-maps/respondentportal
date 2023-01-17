@@ -34,7 +34,7 @@ index.html#-->
   
     <script>
 
-        var map = L.map('map').setView([39.5, -98.35], 5);
+        var map = L.map('map').setView([39.5, -98.35], 9);
 
         
         
@@ -47,7 +47,7 @@ index.html#-->
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }),
-    CDL20: L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap', {
+    CDL20: L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi', {
     layers: 'cdl_2020'
     }),
     Soilmoisture3: L.tileLayer.wms('https://nassgeo.csiss.gmu.edu/cgi-bin/mapserv?map=/DATA/SMAP_DATA/WMS/SMAP-9KM-DAILY-SUB_2021.map&', {
